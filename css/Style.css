@@ -150,7 +150,7 @@ input {
 }
 
 .btn-menu {
-    background: url("https://afrataiza.github.io/teste/hamburger.png");
+    background: url("../img/hamburger.png");
     padding: 1em 1.5em;
     border-radius: 0.5rem;
     text-decoration: none;
@@ -401,14 +401,14 @@ footer .copyright {
 }
 
 .linkedin {
-    background-image: url(https://icones.pro/wp-content/uploads/2021/03/icone-linkedin-ronde-grise.png);
+    background-image: url('../img/linkedinIcon.png');
     background-size: cover;
     width: 25px;
     height: 25px;
 }
 
 .github {
-    background-image: url(https://icones.pro/wp-content/uploads/2021/06/icone-github-grise.png);
+    background-image: url('../img/githubIcon.png');
     background-size: cover;
     width: 25px;
     height: 25px;
