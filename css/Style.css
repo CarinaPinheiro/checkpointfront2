@@ -1,13 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-}
-
-body {
-    overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 header {
@@ -69,14 +66,12 @@ input {
   margin-top: 2rem;
 }
 
-
-.menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-    width: 25%;
-}
+nav ul {
+    display: none;
+  }
+  body{
+    overflow-x: hidden;
+  }
 
 .link {
     color: #222;
@@ -88,13 +83,12 @@ input {
     text-decoration: none;
     transition: 0.5s ease-in-out color;
     padding-left: 10px;
-}
-
-.link:hover {
+  }
+  .link:hover {
     color: #E51B3E;
     font-weight: bold;
     text-decoration: underline;
-}
+  }
 
 .modal-window {
     position: fixed;
@@ -148,17 +142,6 @@ input {
 .modal-window div:not(:last-of-type) {
     margin-bottom: 15px;
 }
-
-.btn-menu {
-    background: url("../img/hamburger.png");
-    padding: 1em 1.5em;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: none;
-}
-
 .navegacao {
     display: flex;
     flex-direction: column;
@@ -166,6 +149,94 @@ input {
     justify-content: space-around;
     flex-wrap: nowrap;
 }
+
+.logo {
+    max-width: 8.75rem;
+  }
+  .menu {
+    display: none;
+  }
+  .btn-menu {
+    background: url("../img/hamburger.png");
+    padding: 1em 1.5em;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+@keyframes animate {
+    0% {
+      background-position-y: 0;
+    }
+    100% {
+      background-position-y: -480px;
+    }
+  }   
+  .menu {
+    display: none;
+  }
+  
+  .btn-menu {
+    display: block;
+  }
+  header {
+    padding: 0 20px;
+  }
+  
+  .logo {
+    width: 140px;
+  }
+  
+  
+  @media (min-width:768px){
+    .intro {
+      display: flex;
+      height: 40vh;
+      flex-wrap: nowrap;
+      margin-bottom: 7rem;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-left: 100px;
+  }
+      .imgprincipal {
+          width: 100vw;
+          background-image: url("../img/Golden_Woman_Jibaro_Love_Death_Robots_2.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          align-content: flex-start;
+          align-items: flex-start;
+          justify-content: flex-end;
+      }
+      .menu {
+        display: flex;
+        width: 37.36979vw;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-right: 5rem;
+      }
+      .logo {
+        margin-left: 2.5rem;
+      }
+      .btn-menu {
+      display: none;
+      }
+      nav ul li{
+        list-style-type: none;
+      }
+      nav ul li a{
+        color: #626262;
+        text-decoration: none;
+      }
+    
+  }
 
 main {
     display: flex;

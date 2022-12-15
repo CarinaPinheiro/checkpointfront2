@@ -110,7 +110,7 @@ iframe{
 }
 
 .btn-menu {
-    background: url("https://afrataiza.github.io/teste/hamburger.png");
+    background: url("../Img/hamburger.png");
     padding: 1em 1.5em;
     border-radius: 0.5rem;
     text-decoration: none;
@@ -257,32 +257,6 @@ footer .copyright {
     opacity: 1;
     transform: scale(1);
 }
-/*----> CSS FOOTER <----*/
-
-@media (max-width: 460px) {
-    .menu {
-        display: none;
-    }
-
-    .btn-menu {
-        display: block;
-    }
-
-    header {
-        padding: 0 20px;
-    }
-
-    .logo {
-        width: 140px;
-    }
-
-    .authors {
-        width: 80%;
-    }
-}
-
-
-
 
 /*Editando banner*/
 
@@ -311,3 +285,28 @@ footer .copyright {
     text-align: left;
     width: 70%;
 }
+
+/*----> CSS FOOTER <----*/
+
+@media (max-width: 460px) {
+    .menu {
+        display: none;
+    }
+
+    .btn-menu {
+        display: block;
+    }
+
+    header {
+        padding: 0 20px;
+    }
+
+    .logo {
+        width: 140px;
+    }
+
+    .authors {
+        width: 80%;
+    }
+}
+
